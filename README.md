@@ -3,5 +3,5 @@
 
 This project aims to 
 * provide tenants in North Jersey with information on the property ownership of their unit or building.
-* Geocode the address in order to be visualized in MapBoxGL
+* Geocode the address in order to be visualized later in MapBoxGL
 * Show what other properties are associated with the owner
