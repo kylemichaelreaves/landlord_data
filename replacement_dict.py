@@ -47,5 +47,6 @@ replacement_dict = {
     ' 61 COLES': '',
     r'-\d{2,}(.?\d{1}(A)?)?A?\b': '',
     r'-\d{2,}': '',
-    r'\s#\d': ''
+    r'\s#\d': '',
+    'VAN HOUTEN ST.': 'VAN HOUTEN AVE.'
 }
