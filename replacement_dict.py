@@ -48,5 +48,6 @@ replacement_dict = {
     r'-\d{2,}(.?\d{1}(A)?)?A?\b': '',
     r'-\d{2,}': '',
     r'\s#\d': '',
-    'VAN HOUTEN ST.': 'VAN HOUTEN AVE.'
+    'VAN HOUTEN ST.': 'VAN HOUTEN AVE.',
+    'MC PHERSON ST.': 'MCPHERSON PL.'
 }
