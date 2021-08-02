@@ -27,7 +27,6 @@ replacement_dict = {
     '(REAR)': '',
     '-FRONT': '',
     'HAMPTON CT.': 'HAMPTON COURT',
-    r'\(\)': '',
     'VARCK': 'VARICK',
     'THO': '',
     'AVE AVE': 'AVE',
@@ -45,9 +44,10 @@ replacement_dict = {
     'ODGEN': 'OGDEN',
     'PATRSON': 'PATERSON',
     ' 61 COLES': '',
+    'VAN HOUTEN ST.': 'VAN HOUTEN AVE.',
+    'MC PHERSON ST.': 'MCPHERSON PL.',
+    r'\(\)': '',
     r'-\d{2,}(.?\d{1}(A)?)?A?\b': '',
     r'-\d{2,}': '',
-    r'\s#\d': '',
-    'VAN HOUTEN ST.': 'VAN HOUTEN AVE.',
-    'MC PHERSON ST.': 'MCPHERSON PL.'
+    r'\s#\d': ''
 }
