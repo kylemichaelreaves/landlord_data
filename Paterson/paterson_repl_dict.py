@@ -4,6 +4,7 @@ paterson_repl_dict = {
     "PT ": "",
     "PT.": "",
     "FT.": "",
+    "FT": "",
     "FRT": "",
     "FRTS. ": "",
     "RRS": "",
