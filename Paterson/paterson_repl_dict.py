@@ -12,5 +12,7 @@ paterson_repl_dict = {
     "MC BRIDE": "MCBRIDE",
     "BOULDER RUN": "BOULDER RUN ROAD",
     "FT": "",
-    "MILL PLOT ": ""
+    "MILL PLOT ": "",
+    r'\sUNIT\s\d{1,}': "",
+    r'-?\s?1/2?': ""
 }
