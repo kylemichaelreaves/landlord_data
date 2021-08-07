@@ -18,6 +18,7 @@ paterson_repl_dict = {
     "MILL PLOT ": "",
     "RIVER TR": "RIVER TERRACE",
     "DON BOSCO": "SHERWOOD",
+    "HOPE": "OXFORD",
     r'\sUNIT\s\d{1,}': "",
     r'-?\s?1/2?': ""
 }
