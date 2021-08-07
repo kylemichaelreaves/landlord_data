@@ -1,5 +1,6 @@
 paterson_repl_dict = {
     "(N 2ND ST)": '',
+    "CV": "",
     "PT ": "",
     "PT.": "",
     "FT.": "",
