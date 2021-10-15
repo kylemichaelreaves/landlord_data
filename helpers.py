@@ -22,6 +22,11 @@ column_order = [ 'propertyLocation',
 df = pd.DataFrame(columns=column_order)
 
 
+def camel_to_snake(camel_string):
+    return ''.join(re.sub('([A-Z]+)', r'_\1', camel_string).lower())
+
+def snake_to_camel(snake_string):
+   return re.sub('_([a-zA-Z0-9])', lambda m: m.group(1).upper(), snake_string)
 
 # number of times owner appears in second column
 def get_number_properties_owned(owner=str):
