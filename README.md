@@ -1,13 +1,13 @@
 # FindYourLandlord Data Cleaning
 ### Parsing and cleaning publicly available North Jersey property data
-This project aims[^2] to
+This project aims[^1] to
 * Visualize property ownership in North Jersey
 * Easily identify landlords owning the most property
 
 Strategy
 * Geocode the address with geopy
 
-[^2]: "I am not a data-scientist, and it shows. I went about this through trial and error, which is highly inefficient.
+[^1]: "I am not a data-scientist, and it shows. I went about this through trial and error, which is highly inefficient.
        A robust data-scientific approach would: request the data from the county tax assessor, then crawl over it.
        This would, in theory–assuming the data includes lat and long coordinates—eliminate the need to geocode the addresses"
 
