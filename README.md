@@ -14,8 +14,8 @@ That process was:
 - Clean property data
 - Geolocate the cleaned address with geopy
 - Reconcile two different kinds of property in a single table or dataframe for each city:
-- - private property
-- - public housing
+  -- private property
+  -- public housing
 - Export the city's dataframe to .csv
 - Create a Postgres database of tables from each of the city's exported dataframes
 
@@ -28,4 +28,5 @@ The data was gathered from publicly available records on the Monmouth County Tax
 https://tax1.co.monmouth.nj.us/cgi-bin/prc6.cgi?menu=index&ms_user=monm&passwd=data&district=1301&mode=11
 
 ### Data Gathered From:
+
 https://tax1.co.monmouth.nj.us/cgi-bin/prc6.cgi?menu=index&ms_user=monm&passwd=data&district=1301&mode=11
