@@ -6,7 +6,7 @@ from geopy.extra.rate_limiter import RateLimiter
 geolocator = Nominatim(user_agent="myGeolocator", timeout=2)
 
 # all dfs must conform to this order and casing
-COLUMNS = [ 'propertyLocation',
+COLUMNS =      [ 'propertyLocation',
                  'ownersName',
                  'ownersMailingAddress',
                  'cityStateZip',
