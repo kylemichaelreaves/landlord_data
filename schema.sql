@@ -1,5 +1,5 @@
 CREATE TABLE jersey_city (
-    property_id int,
+    id serial,
     street_address text,
     owner_name text,
     owners_mailing_address text,
@@ -7,7 +7,7 @@ CREATE TABLE jersey_city (
     full_address text,
     number_properties_owned int,
     list_properties_owned text[],
-    latitude float,
-    longitude float
+    latitude numeric(8, 6),
+    longitude numeric(8, 6)
 );
 
