@@ -14,8 +14,8 @@ That process was:
 - Clean property data
 - Geolocate the cleaned address with geopy
 - Reconcile two different kinds of property in a single table or dataframe for each city:
-  -- private property
-  -- public housing
+  - private property
+  - public housing
 - Export the city's dataframe to .csv
 - Create a Postgres database of tables from each of the city's exported dataframes
 
