@@ -9,15 +9,16 @@ As a whole, the project aims[^1] to
 - Easily identify landlords owning the most property
 
 Toward that end, **this repo** aims to reconstruct my amateurish attempt to go from unclean data from the [Monmouth County Tax Assessor's website](https://tax1.co.monmouth.nj.us/cgi-bin/prc6.cgi?menu=index&ms_user=monm&passwd=data&district=1301&mode=11) to a Postgres database.
-That process was:
+That process proceeded in the following way:
 
-- Clean property data
-- Geolocate the cleaned address with geopy
-- Reconcile two different kinds of property in a single table or dataframe for each city:
-  - private property
-  - public housing
-- Export the city's dataframe to .csv
-- Create a Postgres database of tables from each of the city's exported dataframes
+0. Clean property data
+0. Geolocate the cleaned address with geopy
+0. Reconcile two different kinds of property in a single table or dataframe for each city:
+    - private property
+    - public housing
+0. Convert .csv to .geojson 
+0. Export the city's dataframe to .csv
+0. Create a Postgres database of tables from each of the cities exported dataframes
 
 [^1]:
     I am not a data-scientist, and it shows. I went about this through trial and error, which is highly inefficient.
