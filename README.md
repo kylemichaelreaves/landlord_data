@@ -2,18 +2,22 @@
 
 ### Parsing and cleaning publicly available North Jersey property data
 
-The larger project aims[^1] to
+This repo is the data side of my FindMyLandlord project. I am building the UI in React with TypeScript.
+As a whole, the project aims[^1] to
 
 - Visualize property ownership in North Jersey
 - Easily identify landlords owning the most property
 
-Toward that end, this repo specifically aims to
+Toward that end, **this repo** aims to reconstruct my amateurish attempt to go from unclean data from the Monmouth County Tax Assessor's website to a Postgres database.
+That process was:
 
 - Clean property data
 - Geolocate the cleaned address with geopy
-- Reconcile two different kinds of property in one table for each city:
+- Reconcile two different kinds of property in a single table or dataframe for each city:
 - - private property
 - - public housing
+- Export the city's dataframe to .csv
+- Create a Postgres database of tables from each of the city's exported dataframes
 
 [^1]:
     I am not a data-scientist, and it shows. I went about this through trial and error, which is highly inefficient.
@@ -21,4 +25,7 @@ Toward that end, this repo specifically aims to
     This would, in theory–assuming the data includes lat and long coordinates—eliminate the need to geocode the addresses
 
 The data was gathered from publicly available records on the Monmouth County Tax Assesssor's website:
+https://tax1.co.monmouth.nj.us/cgi-bin/prc6.cgi?menu=index&ms_user=monm&passwd=data&district=1301&mode=11
+
+### Data Gathered From:
 https://tax1.co.monmouth.nj.us/cgi-bin/prc6.cgi?menu=index&ms_user=monm&passwd=data&district=1301&mode=11
