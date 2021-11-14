@@ -30,18 +30,18 @@ def snake_to_camel(snake_string):
 
 # number of times owner appears in second column
 def get_number_properties_owned(owner=str):
-    return len(df[df.ownersName == owner])
+    return len(df[df.owners_name == owner])
 # list of associated properties
 def get_associated_properties_list(owner=str):
-    return df[df.ownersName == owner]['street_address'].unique().tolist()
+    return df[df.owners_name == owner]['street_address'].unique().tolist()
 
 # number of times property appears in first column
 def get_units(address=str):
     return len(df[df.propertyLocation == address])
 
 # columns and the functions that returned them
-column_functions = {'owner_mailing_address': df.ownersMailingAddress + ', ' + df.cityStateZip,
-                    'property_full_address': df.propertyLocation + '''whatever town your searching''',
+column_functions = {'owner_mailing_address': df.owner_mailing_address + ', ' + df.city_state_zip,
+                    'property_full_address': df.street_address + '''whatever town your searching''',
                     'units': get_units(),
                     'list_associated_properties': get_associated_properties_list(),
                     'number_properties_owned': get_number_properties_owned(),
