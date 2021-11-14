@@ -12,28 +12,29 @@ Toward that end, **this repo** is my amateurish attempt to go from unclean data 
 I went about this in the following way:
 
 0. Clean property data
-0. Geolocate the cleaned address with geopy
-0. Reconcile two different kinds of property in a single table or dataframe for each city:
-    - private property
-    - public housing
-0. Export the city's dataframe to .csv
-0. Convert .csv to .geojson. Each of the features within the geojson object is a point on the map.
-0. Create a Postgres database of tables from each of the cities exported dataframes
+1. Geolocate the cleaned address with geopy
+2. Reconcile two different kinds of property in a single table or dataframe for each city:
+   - private property
+   - public housing
+3. Export the city's dataframe to .csv
+4. Convert .csv to .geojson. Each of the features within the geojson object is a point on the map.
+5. Create a Postgres database of tables from each of the cities exported dataframes
 
 ## Database / Table Schema
+
 I caused unnecessary problems for myself by being inconsistent with casing and column names. I wrote functions to switch between cases. Those functions are in helpers.py.
 
 ```sql
-CREATE TABLE jersey_city (
+CREATE TABLE jersey_city_private_property (
     id serial,
     street_address text,
-    owner_name text,
+    owners_name text,
     owners_mailing_address text,
     city_state_zip text,
     property_full_address text,
+    number_properties_owned int,
     units int,
     list_properties_owned text[],
-    number_properties_owned int,
     g_code text,
     latitude numeric(8, 6),
     longitude numeric(8, 6),
@@ -41,11 +42,40 @@ CREATE TABLE jersey_city (
 );
 ```
 
-Get the path of the csv we're importing to our postgres table.
+street_address
+owner_name
+owners_mailing_address
+city_state_zip
+owners_mailing_address
+property_full_address
+units
+list_properties_owned
+number_properties_owned
+g_code
+latitude
+longitude
+
+
+
+### Get the path of the csv we're importing to our postgres table.
+
 `JerseyCity/JerseyCity_PublicHousing.csv`
+
+### Import the .csv using COPY
+
+```sql
+COPY jersey_city_private_propety
+FROM '/Users/kylereaves/src/landlord_data/JerseyCity/jersey_city_private_property.csv'
+DELIMITER ','
+CSV HEADER;
+```
 
 
 [^1]:
     I am not a data-scientist, and it shows. I went about this through trial and error, which is highly inefficient.
     A robust data-scientific approach would: request the data from the county tax assessor, then crawl over it.
     This would, in theory–assuming the data includes lat and long coordinates—eliminate the need to geocode the addresses
+```
+```sql
+psql -c "\copy jersey_city_private_property FROM '/Users/kylereaves/src/landlord_data/JerseyCity/jersey_city_private_property.csv' delimiter ',' csv"
+```
