@@ -8,6 +8,7 @@ CREATE TABLE jersey_city (
     number_properties_owned int,
     list_properties_owned text[],
     latitude numeric(8, 6),
-    longitude numeric(8, 6)
+    longitude numeric(8, 6),
+    primary key (id)
 );
 
