@@ -21,7 +21,7 @@ I went about this in the following way:
 0. Create a Postgres database of tables from each of the cities exported dataframes
 
 ## Database / Table Schema
-I caused unnecessary problems for myself by being inconsistent with casing and column names. I wrote are text casing functions in helpers.py for changing from one to the other.
+I caused unnecessary problems for myself by being inconsistent with casing and column names. I wrote functions to switch between cases. Those functions are in helpers.py.
 
 ```sql
 CREATE TABLE jersey_city (
