@@ -2,6 +2,10 @@
 
 ### Parsing and cleaning publicly available North Jersey property data
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6e1c8be52e074e512b1beb52a71a165173ce26eb
 
 #### This project aims to  
 * Visualize property ownership in North Jersey
@@ -21,7 +25,11 @@
 
 The data was gathered from publicly available records on the Monmouth County Tax Assesssor's website: 
 https://tax1.co.monmouth.nj.us/cgi-bin/prc6.cgi?menu=index&ms_user=monm&passwd=data&district=1301&mode=11
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> 6e1c8be52e074e512b1beb52a71a165173ce26eb
 
 This repo is the data side of my FindYourLandlord project. I am building the UI in React with TypeScript.
 As a whole, the project aims[^1] to
@@ -100,4 +108,7 @@ CSV HEADER;
 ```sql
 psql -c "\copy jersey_city_private_property FROM '/Users/kylereaves/src/landlord_data/JerseyCity/jersey_city_private_property.csv' delimiter ',' csv"
 ```
+<<<<<<< HEAD
 >>>>>>> e53450bc67b43a26158b5c32a1770a98df622574
+=======
+>>>>>>> 6e1c8be52e074e512b1beb52a71a165173ce26eb
