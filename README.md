@@ -24,9 +24,11 @@ I went about this in the following way:
 
 I caused unnecessary problems for myself by being inconsistent with casing and column names. I wrote functions to switch between cases. Those functions are in helpers.py.
 
+- Are the psql columns and types are identical to the dataframe columns and datatypes?
+
 ```sql
 CREATE TABLE jersey_city_private_property (
-    id serial,
+    id serial primary key,
     street_address text,
     owners_name text,
     owners_mailing_address text,
@@ -37,10 +39,53 @@ CREATE TABLE jersey_city_private_property (
     list_properties_owned text[],
     g_code text,
     latitude numeric(8, 6),
-    longitude numeric(8, 6),
-    primary key (id)
+    longitude numeric(8, 6)
 );
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 street_address
 owner_name
