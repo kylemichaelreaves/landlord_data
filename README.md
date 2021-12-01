@@ -49,62 +49,18 @@ I caused unnecessary problems for myself by being inconsistent with casing and c
 CREATE TABLE jersey_city_private_property (
     id serial primary key,
     street_address text,
-    owners_name text,
-    owners_mailing_address text,
+    owner_name text,
+    owner_mailing_address text,
     city_state_zip text,
     property_full_address text,
     number_properties_owned int,
     units int,
-    list_properties_owned text[],
     g_code text,
     latitude numeric(8, 6),
     longitude numeric(8, 6)
+    list_properties_owned text[],
 );
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 street_address
 owner_name
@@ -118,7 +74,6 @@ number_properties_owned
 g_code
 latitude
 longitude
-
 
 
 ### Get the path of the csv we're importing to our postgres table.
