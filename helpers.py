@@ -12,13 +12,12 @@ COLUMNS = ['street_address',
            'owner_mailing_address',
            'city_state_zip',
            'property_full_address',
-           'units',
-           'list_owned_properties',
-           'number_properties_owned',
+           'units_at_property',
            'g_code',
            'latitude',
-           'longitude']
-
+           'longitude',
+           'number_properties_owned',
+           'list_properties_owned',]
 # empty df to satisfy linter
 df = pd.DataFrame(columns=COLUMNS)
 
