@@ -4,12 +4,8 @@
 This repo is the data side of my FindYourLandlord project. I am building the UI in React with TypeScript.
 As a whole, the project aims[^1] to
 
-### This project aims to
 * Visualize property ownership in North Jersey
 * Easily identify landlords owning the most property
-
-The data was gathered from publicly available records on the Monmouth County Tax Assesssor's website:
-https://tax1.co.monmouth.nj.us/cgi-bin/prc6.cgi?menu=index&ms_user=monm&passwd=data&district=1301&mode=11
 
 Toward that end, **this repo** is my amateurish attempt to go from unclean data from the [Monmouth County Tax Assessor](https://tax1.co.monmouth.nj.us/cgi-bin/prc6.cgi?menu=index&ms_user=monm&passwd=data&district=1301&mode=11) to a Postgres database.
 I went about this in the following way:
