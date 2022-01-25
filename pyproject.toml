@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "landlord_data"
+version = "0.1.0"
+description = "packages for landlord_data"
+authors = ["Kyle Reaves <89040357+KyleReaves@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.4.0"
+geopy = "^2.2.0"
+numpy = "^1.22.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

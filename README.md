@@ -1,7 +1,11 @@
 # FindYourLandlord Data Cleaning
 
 ## Parsing and cleaning publicly available North Jersey property data
-This repo is the data side of my FindYourLandlord project. I am building the UI in React with TypeScript.
+This repo is the data side of my FindYourLandlord project.
+The Jupyter notebook for Jersey City is where I'm testing out different strategies for cleaning strings.
+
+I am building the UI in React with TypeScript.
+
 As a whole, the project aims[^1] to
 
 * Visualize property ownership in North Jersey
