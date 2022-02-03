@@ -19,11 +19,6 @@ In the interest of saving time and avoiding frustration, maintain consistent **s
 across dataframes, models, and tables. 
 If the columns appear differently in a Rails schema than they do in a .csv, Rails won't be able to seed the model.
 
-
-### Get the path of the csv we're importing to our postgres table.
-
-`JerseyCity/JerseyCity_PublicHousing.csv`
-
 ### Import the .csv using COPY in SQL
 
 ```sql
